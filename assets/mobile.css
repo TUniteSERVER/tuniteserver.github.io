@@ -3,6 +3,16 @@
     margin: 0;
     padding: 0;
 }
+.mobile{
+    display:none
+}
+@media screen and (max-width:600px){
+    .pc-welcome2kivotos-title{
+    width: 400px !important;
+    display: block;}
+
+}
+/*
 @media screen and (max-width:600px){
     .pc{display: none;}
     .mobile-mgr2{
@@ -87,4 +97,4 @@
         background-color: #737373 !important;
     }
 
-}
+}*/

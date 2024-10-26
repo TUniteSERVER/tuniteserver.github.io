@@ -109,4 +109,11 @@ maudio.addEventListener("ended", function() {
     this.play();
 });
 
-
+window.addEventListener('resize', () => {
+    if(window.innerWidth<601){
+        document.querySelector(".pc-bg").src="./assets/output.mp4"
+    }
+    if(window.innerWidth>=601){
+        document.querySelector(".pc-bg").src="./assets/output.webm"
+    }
+});
