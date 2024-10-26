@@ -14,6 +14,12 @@
 .pc-logo{
     height:3.33rem !important;
 }
+.pc-introduce-title{
+    margin-top: 9.3333dvh !important;
+}
+.pc-introduce-mgpic{
+    margin-top: 4.333rem;
+}
 }
 /*
 @media screen and (max-width:600px){
