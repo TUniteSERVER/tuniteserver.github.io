@@ -1,4 +1,4 @@
-console.log(`Copyright TUnite, All Rights Reserved.\nComputed by MZCompute GmbH.`)
+console.log(`Copyright TUnite, All Rights Reserved.\nComputed by MZCompute GmbH.[wang@mingze.de].`)
 
 function GetQueryString(name){
     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
