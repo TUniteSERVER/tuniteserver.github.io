@@ -9,9 +9,11 @@
 @media screen and (max-width:600px){
     .pcm{display: none;}
     .pc-welcome2kivotos-title{
-    width: 400px !important;
-    display: block;}
-
+    display: block;
+}
+.pc-logo{
+    height:3.33rem !important;
+}
 }
 /*
 @media screen and (max-width:600px){

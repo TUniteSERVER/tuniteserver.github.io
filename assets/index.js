@@ -108,12 +108,15 @@ maudio.addEventListener("ended", function() {
     this.currentTime = 0;
     this.play();
 });
-
-window.addEventListener('resize', () => {
+function videobg(){
     if(window.innerWidth<601){
         document.querySelector(".pc-bg").src="./assets/output.mp4"
     }
     if(window.innerWidth>=601){
         document.querySelector(".pc-bg").src="./assets/output.webm"
     }
+}
+videobg()
+window.addEventListener('resize', () => {
+videobg()
 });

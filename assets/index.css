@@ -2,8 +2,9 @@
 .mouse_gray_div{
     position:absolute;
     bottom:0;
-    left: calc(50% - 2rem);
+    width:100%
 }
 .mouseicon{
     width:2rem;
+    margin-left: calc(50dvw - 1rem);
 }
