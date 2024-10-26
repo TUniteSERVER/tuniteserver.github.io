@@ -15,6 +15,8 @@ TUnite联合官方网站源代码
 
 TUnite
 
+Copyright 2024 TUnite, All Rights Reserved.
+
 由MZCompute特许TUnite组织使用本源代码且修改
 
 由 MZCompute GmbH. [wang@mingze.de] 计算
