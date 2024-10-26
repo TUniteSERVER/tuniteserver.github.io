@@ -8,3 +8,39 @@
     width:2rem;
     margin-left: calc(50dvw - 1rem);
 }
+.tu-member-logo{
+    width: 23.666rem;
+}
+.tu-channel-1{
+    height: 73.3333dvh;
+    width: 100%;
+}
+.tu-comp-caption{
+    text-align: left !important;
+    margin-bottom: 4.3333rem;
+}
+.slide-page p{
+    text-align: left !important;
+}
+
+.tu-member-introduce-text{
+    font-size:x-large;
+    text-shadow:2px 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.zoomImage{
+    width:0;
+    height:72dvh;
+    padding-left: 100%;
+    overflow:hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+}
+
+.pc-welcome2kivotos-btn1{
+    width: 8.88rem;
+    margin-top:1.35rem
+}

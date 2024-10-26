@@ -5,6 +5,12 @@
     .pc-introduce-mg{
         margin-top: 14rem;
     }
+    .pc-introduce-mg2{
+        margin-top: 7rem;
+    }
+    .tu-comp-caption {
+        padding-left: 2rem;
+   }
 }
     .mobile{display: none;}
     *{
