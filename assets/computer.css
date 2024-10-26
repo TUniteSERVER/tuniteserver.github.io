@@ -11,6 +11,13 @@
     .tu-comp-caption {
         padding-left: 2rem;
    }
+   .tu-member-introduce-text{
+    font-size:x-large;
+    text-shadow:2px 2px 8px rgba(0, 0, 0, 0.35);
+}
+.tu_member_logo{
+    width: 20rem;
+}
 }
     .mobile{display: none;}
     *{

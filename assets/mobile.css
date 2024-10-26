@@ -11,6 +11,11 @@
     .pc-welcome2kivotos-title{
     display: block;
 }
+.impmg1{
+    margin-top: 4.3333dvh !important;
+    font-size: 3.3333rem;
+    margin-bottom: 2rem;
+}
 .pc-logo{
     height:3.33rem !important;
 }
@@ -20,8 +25,11 @@
 .pc-introduce-mgpic{
     margin-top: 4.333rem;
 }
-.tu-member-logo{
-    width: 7rem !important;
+.tu_member_logo{
+    width: 10.333rem !important;
+}
+.tu-member-introduce-text{
+    text-shadow:2px 2px 8px rgba(0, 0, 0, 0.35);
 }
 }
 /*
