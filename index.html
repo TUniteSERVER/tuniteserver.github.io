@@ -20,150 +20,185 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<!-- Head -->
+<!-- Head -->
 <head>
     <meta charset="UTF-8">
-	<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "572b4df05ef24256a2f98f8414347fbc"}'></script><!-- End Cloudflare Web Analytics -->
-	<meta name="description" content="A Website For Minecraft Kivotos">
-    <meta name="author" content="MZCompute GmbH.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cloudflare Web Analytics -->
+    <script data-cf-beacon='{"token": "572b4df05ef24256a2f98f8414347fbc"}' defer
+            src='https://static.cloudflareinsights.com/beacon.min.js'></script>
+    <!-- End Cloudflare Web Analytics -->
+    <meta content="A Website For Minecraft Kivotos" name="description">
+    <meta content="MZCompute GmbH." name="author">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>TUnite - TU联合</title>
     <link href="./assets/index.css?0825-02" rel="stylesheet"/>
-	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="icon" href="/assets/tulogo.ico">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/tulogo.ico" rel="icon">
 </head>
-	<!-- Body -->
+<!-- Body -->
 <body ontouchstart="">
-    <div class="mb-header mobile-navbar">
-		<div class="mobile-navbar-menubox">
-			<a href="#toggleMusic" onclick="togglemusic()">
-			<div class="mobile-menubox0btn">
-				<div class="mobile-btn1" id="nl-btn1"></div>
-			</div></a>
-		</div>
-    </div>
-    <div class="slide-container" id="slidePage-container">
-		<div class="slide-page page1">
-			<div class="mouse_gray_div">
-				<img src="./assets/mouse.svg" class="mouseicon">
-			</div>
-            <div class="mobile mobile-logo">
-                <img src="./assets/tulogo2.svg" class="mobile-logo-img" />
+<div class="mb-header mobile-navbar">
+    <div class="mobile-navbar-menubox">
+        <a href="#toggleMusic" onclick="togglemusic()">
+            <div class="mobile-menubox0btn">
+                <div class="mobile-btn1" id="nl-btn1"></div>
             </div>
-			<video autoplay loop muted src="./assets/output.mp4" class="mobile mobile-bg"></video>
-			<div class="">
-				<img src="./assets/tulogo2.svg" class="pc pc-logo" />
-				<video autoplay loop muted src="./assets/output.webm" class="pc pc-bg"></video>
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB34AAAQ4AQMAAADcmO8qAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURQAAAAAAAKVnuc8AAAACdFJOUwAShSq8cAAABA1JREFUeNrtzwENAAAIA6CHsYz1TGyQs1GA3E6VCAsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwu3eMOdQjGNgaQMAAAAAElFTkSuQmCC" class="pc pc-mark" />
-				<div class="pc">
-					<div class="pc-welcome2kivotos">
-						<span class="pc-welcome2kivotos-title" style="max-width:100%"><span class="pc-welcome2kivotos-title-t">你好 我们是</span> <span class="pc-welcome2kivotos-title-k">T</span><span class="pc-welcome2kivotos-title-b">Unite</span></span><!--
+        </a>
+    </div>
+</div>
+<div class="slide-container" id="slidePage-container">
+    <div class="slide-page page1">
+        <div class="mouse_gray_div">
+            <img class="mouseicon" src="./assets/mouse.svg">
+        </div>
+        <div class="mobile mobile-logo">
+            <img class="mobile-logo-img" src="./assets/tulogo2.svg"/>
+        </div>
+        <video autoplay class="mobile mobile-bg" loop muted src="./assets/output.mp4"></video>
+        <div class="">
+            <img class="pc pc-logo" src="./assets/tulogo2.svg"/>
+            <video autoplay class="pc pc-bg" loop muted src="./assets/output.webm"></video>
+            <img class="pc pc-mark"
+                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB34AAAQ4AQMAAADcmO8qAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURQAAAAAAAKVnuc8AAAACdFJOUwAShSq8cAAABA1JREFUeNrtzwENAAAIA6CHsYz1TGyQs1GA3E6VCAsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwu3eMOdQjGNgaQMAAAAAElFTkSuQmCC"/>
+            <div class="pc">
+                <div class="pc-welcome2kivotos">
+                    <span class="pc-welcome2kivotos-title" style="max-width:100%"><span
+                            class="pc-welcome2kivotos-title-t">你好 我们是</span> <span
+                            class="pc-welcome2kivotos-title-k">T</span><span
+                            class="pc-welcome2kivotos-title-b">Unite</span></span><!--
 						<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhMAAAAKCAMAAAA5OyxsAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAFTUExURQAAAP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yY7/aYAAABxdFJOUwBZf3gIAQKAb24XJ3tpEgV+RAs8X20hci51ZwMgamhRBGAvfTtQDk86MA1iczF0TkUdDDkfHmxSZk0ZEzJhWAZkV0Z8HDgzKRFMGF5rSxpjIypCQRBIRxstCl1lKFMUVlU3D1s2Jj9ASkkiK3c0WiVDUtSKZwAAA3tJREFUWMO9mOlXGjEUxQcV5o0Ko8i4IKC4IuKCC1rRqm3Vui9t7WZttYt27///qS+JnYSQ2QDLp3smv8PJu9zkPUbT7j7lDEA6T2XLPoD1ksqVKECmhcopC+AdVeFdAPgko60cneDoIUezHugtoldsMyMGwDlVkQEA4xWV8Q2Ag1Yqu9MAk4M2+tUFTSnR0Qq0xNFjhpaT6MYYlTslgF9sWzf4BWdU9YewmDYqY8sV6EeGfnFEr1XoDUcvmBsv0I0tblyRG7dO5RAa94Gj8wxNILooo702qgnovo3uKVG0xtB1vYtKM4FyNEyLKOh60wR92tah683Mu05cj7bIaA+iU87oIEEHqtBhBar1Nul6X4zWO4NP10xaRAblLKu3Wdc72mT0Aa5PMjQZDH0ko4IbxXZdf9xN5Tw+NOivH3mIMhSR0Ccc3ZLQfncUGLppo4Ib/cS4JWrcc2LcNl3/TIxb8Y8eOaPXBP1J139zFK2JItLJzlBIVe8CFtGeYseN1DvnjC4SlNWbI2g+IBooUwHjt6dClzi6qjUkU7Whu7h+bCozVWf8hhl6pYqfGq047+FxlAlTCopQxBAWMR2z0WxgNKNCuTVi/HKNi1+Ro/MeaG3xe8ozpYyfcDJldMXlohQytew7UxQ95+iFP/SHjVZYIzaGLMpxZs00FjHkr4cEaDdKtLb4Se3GX/zUnanh8RtzR6s6k7qjumTKK37bzvFTtxu0ZtS+GrQusrO4VMQcKWKEzWGk3gVnNM7RAO1GQO8pfj0+UHbe5UzNBs2UJ+rRmcRM1Ra/ettN5aU1gTvriUlBUZ9MghYCo16dKWj8apt2Us6G1xa/xkw7rR5zyZp5j9MO70wVhotFzOJT9n/RXEM5w4rowyJ6XdAsR73Ou9CZCjZad/ykdhN4MGKZiv/vYVs4715XWh3TzpSvdkPeO9hXg9ZNdlZ0Ppl5UkSOo4sNaTcC6hm/2qedqvgpURqUQj0TtBc644Gq43ePw7Y87eBnfQMgySYPbRMgvcN2lgR4W6bypASwyd7kdBlgPXNBvwVDH5oy+t0CGLi7wgEs9nYl8gYgekLlZRRgMu6MhpXoKUf/IJqT0TJB87IbR2mAfRaUVQuMQ3aGdgFKq/7QQ0S3VWiiCr21UdGN92jcKVWv0bhlZlzqACBk/nsHZ535Q3MGGGr0UkY17S97ldOnNQxp2AAAAABJRU5ErkJggg==" class="pc-lll" />
 						<div class="pc-welcome2kivotos-btn">
                             <a href="https://kivotos.horz.team"><div class="pc-welcome2kivotos-btn1 pc-mgr2"><img src="./assets/btn1.png" /></div></a>
                             <a href="https://kivotos.horz.team/download/"><div class="pc-welcome2kivotos-btn1"><img src="./assets/btn2.png" /></div></a>
                         </div>
 						<span class="pc-welcome2kivotos-copyright">Copyright 2024 Horzteam, All Rights Reserved. 由 MZCompute GmbH. 计算</span>-->
-					</div>
-				</div>
-                <!--
-				<div class="step step1 animated fadeIn" data-delay="1000"></div>
-				<div class="step step2 animated fadeIn"></div>
-                -->
-			</div>
-			
-		</div>
-		<div class="slide-page page2">
-			<div class="pc-introduce">
-			<div class="pc-introduce-mg2">
-				<h1 class="impmg1"><span class="pc-welcome2kivotos-title-k">T</span><span class="tu-channel-3">Unite 主要成员</span></h1>
-				<div class="tu-channel-1">
-						<div id="tu-comp-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-							<div class="carousel-inner">
-								<div class="carousel-item active" data-bs-interval="2000">
-									<div class="zoomImage" style="background-image:url(/assets/1.jpg)"></div>
+                </div>
+            </div>
+            <!--
+            <div class="step step1 animated fadeIn" data-delay="1000"></div>
+            <div class="step step2 animated fadeIn"></div>
+            -->
+        </div>
+
+    </div>
+    <div class="slide-page page2">
+        <div class="pc-introduce">
+            <div class="pc-introduce-mg2">
+                <h1 class="impmg1"><span class="pc-welcome2kivotos-title-k">T</span><span class="tu-channel-3">Unite 主要成员</span>
+                </h1>
+                <div class="tu-channel-1">
+                    <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="tu-comp-carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <div class="zoomImage" style="background-image:url(/assets/1.jpg)"></div>
+                                <div class="carousel-caption d-md-block tu-comp-caption">
+                                    <div id="tu-channel-1"><img class="tu_member_logo"
+                                                                src="./assets/3.png"/><br><br><span
+                                            class="tu-member-introduce-text">《Bluecraft》<br>多样玩法, 尽享乐趣</span><br>
+                                        <a href="https://www.bluecraft.top/?ref=tu" target="_blank">了解更多</a></div>
+                                </div>
+                            </div>
+							<div class="carousel-item" data-bs-interval="2000">
+								<div class="zoomImage" style="background-image:url(/assets/BM-BG.png)"></div>
 								<div class="carousel-caption d-md-block tu-comp-caption">
-									<div id="tu-channel-2"><img src="./assets/3.png" class="tu_member_logo" /><br><br><span class="tu-member-introduce-text">《Bluecraft》<br>多样玩法, 尽享乐趣</span><br>
-									<a href="https://www.bluecraft.top/?ref=tu" target="_blank">了解更多</a></div>
-								  </div>
-								  </div>
-							  <div class="carousel-item" data-bs-interval="2000">
-								<div class="zoomImage" style="background-image:url(/assets/mkv2.png)"></div>
-								<div class="carousel-caption d-md-block tu-comp-caption">
-									<div id="tu-channel-2"><img src="./assets/nobg_logo.png" class="tu_member_logo" /><br><br><span class="tu-member-introduce-text">《Minecraft Kivotos》<br>这里是！Kivotos！</span><br>
-									<a href="https://www.kivotos.net.cn/?ref=tu" target="_blank">了解更多</a></div>
-								  </div>
-							  </div>
-							  <div class="carousel-item" data-bs-interval="2000">
-								<div class="zoomImage" style="background-image:url(/assets/mw.png)"></div>
-								<div class="carousel-caption d-md-block tu-comp-caption">
-									<div id="tu-channel-2"><img src="./assets/Image_1729941499603.PNG" class="tu_member_logo" /><br><br><span class="tu-member-introduce-text">《MillenniumWorld》<br>千禧年世界出3.0了?!</span><br>
-									<a href="https://xn--rhqy9ju9kn4wh5e.xn--fiqs8s/?ref=tu" target="_blank">了解更多</a></div>
-								  </div>
-							  </div>
+									<div id="tu-channel-2"><img class="tu_member_logo"
+																src="./assets/BM-Logo.ico"/><br><br><span
+											class="tu-member-introduce-text">《Blue-Millennium》<br>自由社区，开放玩法</span><br>
+										<a href="https://www.blue-millennium.fun/?ref=tu" target="_blank">了解更多</a></div>
+								</div>
 							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#tu-comp-carousel" data-bs-slide="prev">
-							  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							  <span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#tu-comp-carousel" data-bs-slide="next">
-							  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-							  <span class="visually-hidden">Next</span>
-							</button>
-						  </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="zoomImage" style="background-image:url(/assets/mkv2.png)"></div>
+                                <div class="carousel-caption d-md-block tu-comp-caption">
+                                    <div id="tu-channel-3"><img class="tu_member_logo"
+                                                                src="./assets/nobg_logo.png"/><br><br><span
+                                            class="tu-member-introduce-text">《Minecraft Kivotos》<br>这里是！Kivotos！</span><br>
+                                        <a href="https://www.kivotos.net.cn/?ref=tu" target="_blank">了解更多</a></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="zoomImage" style="background-image:url(/assets/mw.png)"></div>
+                                <div class="carousel-caption d-md-block tu-comp-caption">
+                                    <div id="tu-channel-4"><img class="tu_member_logo"
+                                                                src="./assets/Image_1729941499603.PNG"/><br><br><span
+                                            class="tu-member-introduce-text">《MillenniumWorld》<br>千禧年世界出3.0了?!</span><br>
+                                        <a href="https://xn--rhqy9ju9kn4wh5e.xn--fiqs8s/?ref=tu"
+                                           target="_blank">了解更多</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#tu-comp-carousel"
+                                type="button">
+                            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#tu-comp-carousel"
+                                type="button">
+                            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
 
-				</div>
-			</div></div>
-		</div>
-		<div class="slide-page page3 endp">
-			<div class="pc-introduce">
-				<div class="pc-introduce-mg">				<div class="row">
-					<div class="col-sm-6"><h1 class="pc-introduce-title">关于 <span class="pc-welcome2kivotos-title-k">T</span><span class="">Unite</span></h1>
-						<span>TUnite是一个 Minecraft 伺服器 联合组织，建立于2024年，致力于提供 Minecraft 伺服器与用户优秀的内容与服务。<br>目前，多个 Minecraft 伺服器已参加 TUnite，例如 Bluecraft、BlueMillennium、Minecraft Kivotos、PudArchive 等优质 Minecraft 伺服器。</span></div>
-					<div class="col-sm-6"><div class="pc-introduce-mgpic"><img src="./assets/tulogo2.svg" /></div></div>
-					</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slide-page page3 endp">
+        <div class="pc-introduce">
+            <div class="pc-introduce-mg">
+                <div class="row">
+                    <div class="col-sm-6"><h1 class="pc-introduce-title">关于 <span
+                            class="pc-welcome2kivotos-title-k">T</span><span class="">Unite</span></h1>
+                        <span>TUnite是一个 Minecraft 伺服器 联合组织，建立于2024年，致力于提供 Minecraft 伺服器与用户优秀的内容与服务。<br>目前，多个 Minecraft 伺服器已参加 TUnite，例如 Bluecraft、Blue-Millennium、Minecraft Kivotos、PudArchive 等优质 Minecraft 伺服器。</span>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="pc-introduce-mgpic"><img src="./assets/tulogo2.svg"/></div>
+                    </div>
+                </div>
+            </div>
 
-			</div>
-			<div class="commonfooter"><span>&copy; 2024 TUnite, All Rights Reserved.<br>由 MZCompute 计算.</span></div>
-		</div>
-		<!--
-		<div class="slide-page page2">
-			<div class="container">
-				<h2>Page2 - 延迟播放动画</h2>
-				<div class="step step1 animated bounceIn" data-delay="1000"></div>
-				<div class="step step2 animated flipInX" data-delay="1500"></div>
-				<div class="step step3 animated flipInY" data-delay="2000"></div>
-			</div>
-		</div>
-		<div class="slide-page page3">
-			<div class="container">
-				<h2>Page3 - 手动播放动画</h2>
-				<a class="play" href="javascript:slide.slideFire(3)">点击播放动画</a>
-				<div class="lazy step1 animated zoomInDown"></div>
-				<div class="lazy step2 animated rollIn"></div>
-			</div>
-		</div>
-		<div class="slide-page page4">
-			<div class="container">
-				<h2>Page4 - 滚动条滚动</h2>
-				<p>当内容长度超过屏幕<br/>会自动变成原生滚动条方式</p>
-				<ul>
-					<li>滚动内容 - 第1条</li>
-					<li>滚动内容 - 第2条</li>
-					<li>滚动内容 - 第3条</li>
-					<li>滚动内容 - 第4条</li>
-					<li>滚动内容 - 最后1条内容</li>
-				</ul>
-			</div>
-		</div>-->
-		<nav class="pagination" id="pagination">
-			<div class="pagination-page"></div>
-		</nav>
-	</div>
+        </div>
+        <div class="commonfooter"><span>&copy; 2024 TUnite, All Rights Reserved.<br>由 MZCompute 计算.</span></div>
+    </div>
+    <!--
+    <div class="slide-page page2">
+        <div class="container">
+            <h2>Page2 - 延迟播放动画</h2>
+            <div class="step step1 animated bounceIn" data-delay="1000"></div>
+            <div class="step step2 animated flipInX" data-delay="1500"></div>
+            <div class="step step3 animated flipInY" data-delay="2000"></div>
+        </div>
+    </div>
+    <div class="slide-page page3">
+        <div class="container">
+            <h2>Page3 - 手动播放动画</h2>
+            <a class="play" href="javascript:slide.slideFire(3)">点击播放动画</a>
+            <div class="lazy step1 animated zoomInDown"></div>
+            <div class="lazy step2 animated rollIn"></div>
+        </div>
+    </div>
+    <div class="slide-page page4">
+        <div class="container">
+            <h2>Page4 - 滚动条滚动</h2>
+            <p>当内容长度超过屏幕<br/>会自动变成原生滚动条方式</p>
+            <ul>
+                <li>滚动内容 - 第1条</li>
+                <li>滚动内容 - 第2条</li>
+                <li>滚动内容 - 第3条</li>
+                <li>滚动内容 - 第4条</li>
+                <li>滚动内容 - 最后1条内容</li>
+            </ul>
+        </div>
+    </div>-->
+    <nav class="pagination" id="pagination">
+        <div class="pagination-page"></div>
+    </nav>
+</div>
 
-	<audio id="mbgm" src="./assets/bgm.mp3"></audio>
+<audio id="mbgm" src="./assets/bgm.mp3"></audio>
 
-    <script src="./assets/bkk.js?0825"></script><script src="./assets/index.js?0825-01"></script>
-	<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js"></script>
+<script src="./assets/bkk.js?0825"></script>
+<script src="./assets/index.js?0825-01"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js"></script>
 </body>
 </html>
