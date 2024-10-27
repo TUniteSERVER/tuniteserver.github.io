@@ -1,37 +1,49 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.mobile{
-    display:none
+
+.mobile {
+    display: none
 }
-@media screen and (max-width:600px){
-    .pcm{display: none;}
-    .pc-welcome2kivotos-title{
-    display: block;
+
+@media screen and (max-width: 600px) {
+    .pcm {
+        display: none;
+    }
+
+    .pc-welcome2kivotos-title {
+        display: block;
+    }
+
+    .impmg1 {
+        margin-top: 4.3333dvh !important;
+        font-size: 3.3333rem;
+        margin-bottom: 2rem;
+    }
+
+    .pc-logo {
+        height: 3.33rem !important;
+    }
+
+    .pc-introduce-title {
+        margin-top: 9.3333dvh !important;
+    }
+
+    .pc-introduce-mgpic {
+        margin-top: 4.333rem;
+    }
+
+    .tu_member_logo {
+        width: 10.333rem !important;
+    }
+
+    .tu-member-introduce-text {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.35);
+    }
 }
-.impmg1{
-    margin-top: 4.3333dvh !important;
-    font-size: 3.3333rem;
-    margin-bottom: 2rem;
-}
-.pc-logo{
-    height:3.33rem !important;
-}
-.pc-introduce-title{
-    margin-top: 9.3333dvh !important;
-}
-.pc-introduce-mgpic{
-    margin-top: 4.333rem;
-}
-.tu_member_logo{
-    width: 10.333rem !important;
-}
-.tu-member-introduce-text{
-    text-shadow:2px 2px 8px rgba(0, 0, 0, 0.35);
-}
-}
+
 /*
 @media screen and (max-width:600px){
     .pc{display: none;}
