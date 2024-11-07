@@ -96,3 +96,97 @@ videobg()
 window.addEventListener('resize', () => {
     videobg()
 });
+
+const carouselData = {
+    "carouselItems": [
+      {
+        "image": "/assets/1.jpg",
+        "logo": "./assets/3.png",
+        "title": "《Bluecraft》",
+        "description": "多样玩法, 尽享乐趣",
+        "link": "https://www.bluecraft.top/?ref=tu",
+        "linkText": "了解更多"
+      },
+      {
+        "image": "/assets/BM-BG.png",
+        "logo": "./assets/BM-Logo.ico",
+        "title": "《Blue-Millennium》",
+        "description": "自由社区，开放玩法",
+        "link": "https://www.blue-millennium.fun/?ref=tu",
+        "linkText": "了解更多"
+      },
+      {
+        "image": "/assets/mkv2.png",
+        "logo": "./assets/nobg_logo.png",
+        "title": "《Minecraft Kivotos》",
+        "description": "这里是！Kivotos！",
+        "link": "https://www.kivotos.net.cn/?ref=tu",
+        "linkText": "了解更多"
+      },
+      {
+        "image": "/assets/mw.png",
+        "logo": "./assets/Image_1729941499603.PNG",
+        "title": "《MillenniumWorld》",
+        "description": "千禧年世界出3.0了?!",
+        "link": "https://xn--rhqy9ju9kn4wh5e.xn--fiqs8s/?ref=tu",
+        "linkText": "了解更多"
+      }
+    ]
+  };
+  
+  // 创建一个carousel-inner div
+  const carouselInner = document.getElementById('tu-channels');
+  
+  // 动态生成HTML
+  carouselData.carouselItems.forEach((item, index) => {
+    const isActive = index === 0 ? 'active' : '';  // 设置第一个元素为active
+  
+    // 创建carousel-item div
+    const carouselItem = document.createElement('div');
+    carouselItem.classList.add('carousel-item', isActive);
+    carouselItem.setAttribute('data-bs-interval', '2000');
+  
+    // 创建背景图片
+    const zoomImage = document.createElement('div');
+    zoomImage.classList.add('zoomImage');
+    zoomImage.style.backgroundImage = `url(${item.image})`;
+  
+    // 创建carousel-caption
+    const carouselCaption = document.createElement('div');
+    carouselCaption.classList.add('carousel-caption', 'd-md-block', 'tu-comp-caption');
+  
+    // 创建内容
+    const captionContent = document.createElement('div');
+    captionContent.id = `tu-channel-${index + 1}`;
+  
+    const logoImg = document.createElement('img');
+    logoImg.classList.add('tu_member_logo');
+    logoImg.src = item.logo;
+  
+    const description = document.createElement('span');
+    description.classList.add('tu-member-introduce-text');
+    description.innerHTML = `${item.title}<br>${item.description}`;
+  
+    const link = document.createElement('a');
+    link.href = item.link;
+    link.target = '_blank';
+    link.textContent = item.linkText;
+  
+    // 将内容加入到carousel-item
+    captionContent.appendChild(logoImg);
+    captionContent.appendChild(document.createElement('br'));
+    captionContent.appendChild(document.createElement('br'));
+    captionContent.appendChild(description);
+    captionContent.appendChild(document.createElement('br'));
+    captionContent.appendChild(link);
+  
+    carouselCaption.appendChild(captionContent);
+  
+    // 将zoomImage和carouselCaption加入到carousel-item
+    carouselItem.appendChild(zoomImage);
+    carouselItem.appendChild(carouselCaption);
+  
+    // 将carousel-item加入到carousel-inner
+    carouselInner.appendChild(carouselItem);
+  });
+  
