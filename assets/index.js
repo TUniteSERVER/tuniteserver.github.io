@@ -85,10 +85,10 @@ maudio.addEventListener("ended", function () {
 
 function videobg() {
     if (window.innerWidth < 601) {
-        document.querySelector(".pc-bg").src = "https://file.mingze.de/d/mzcompute/tunite/output.mp4"
+        document.querySelector(".pc-bg").src = "https://u0.7234567.xyz/u02/mzcompute/tunite/output.mp4"
     }
     if (window.innerWidth >= 601) {
-        document.querySelector(".pc-bg").src = "https://file.mingze.de/d/mzcompute/tunite/output.webm"
+        document.querySelector(".pc-bg").src = "https://u0.7234567.xyz/u02/mzcompute/tunite/output.webm"
     }
 }
 
